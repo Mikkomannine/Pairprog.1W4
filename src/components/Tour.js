@@ -1,6 +1,7 @@
-const Tour = ( image, date, info, title, location, cost, duration, removeTour ) => {
+import React from 'react';
+const Tour = ({id, onDelete, image, date, title, info, location, cost, duration }) => {
 	const handleRemoveTour = () => {
-		onDelete(tour.id);
+		onDelete(id);
 	};
 	return (
 		<article className="tour-card">
